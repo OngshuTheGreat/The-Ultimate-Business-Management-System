@@ -59,6 +59,8 @@ if (isset($_GET['cancel'])) {
                 <li><a href="inventory.php">Inventory</a></li>
                 <li><a href="employeelist.php">Employee Management</a></li>
                 <li><a href="reservations.php">Reservations</a></li>
+
+
                 <li><a href="vendors.php">Vendor Management</a></li>
 
             </ul>
