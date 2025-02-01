@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    background-color: white;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 250px;
+    background-color: crimson;
+    color: #fff;
+    padding-top: 20px;
+    position: fixed;
+    height: 100%;
+}
+
+.sidebar .sidebar-options a {
+    display: block;
+    color: #fff;
+    margin: 6px;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar .sidebar-options a:hover {
+    background-color: black;
+    color: white;
+}
+
+.sidebar .logo {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    width: 100%;
+}
+
+.header {
+    background-color: crimson;
+    color: white;
+    padding: 15px;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.add-order-btn {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.add-order-btn:hover {
+    background-color: black;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.order-cards {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px;
+}
+
+.card {
+    background: crimson;
+    color: white;
+    padding: 20px;
+    width: 290px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.card p {
+    font-size: 16px;
+    margin: 8px 0;
+    line-height: 1.4;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.view-details-btn{
+    background-color: rgba(255, 255, 255, 0.4);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.cancel-btn {
+    background-color: rgba(255, 255, 0, 0.4);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.done-btn{
+    background-color: rgba(0, 255, 0, 0.5);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.done-btn:hover, .cancel-btn:hover, .view-details-btn:hover {
+    background-color: black;
+}
+
+.order-details table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.order-details th,
+.order-details td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.order-details th {
+    background-color: crimson;
+    color: white;
+}
+
+.order-details td {
+    background-color: #f4f4f4;
+}

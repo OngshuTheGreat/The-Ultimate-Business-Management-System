@@ -1,0 +1,95 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    background-color: crimson;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: crimson;
+    font-weight: bold;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 20px 0px;
+    z-index: 1000;
+}
+
+.navbar .nav-links {
+    display: flex;
+    gap: 5px;
+}
+
+.navbar .nav-links li {
+    display: inline-block;
+}
+
+.navbar .nav-links a {
+    color: white;
+    font-size: 20px;
+    padding: 12px 18px;
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.navbar .nav-links a:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.20);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+}
+
+.container h3{
+    font-size: 35px;
+    padding: 4px;
+}
+
+.container p {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    width: 120px;
+    font-size: 14px;
+    margin-top: 20px;
+    padding: 12px 17px;
+    border-radius: 25px;
+    border: 2px solid crimson;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #fbd0d9;
+    color: black;
+    transform: scale(1.05);
+}

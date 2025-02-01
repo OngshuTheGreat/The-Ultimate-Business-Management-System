@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    background-color: white;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 250px;
+    background-color: crimson;
+    color: #fff;
+    padding-top: 20px;
+    position: fixed;
+    height: 100%;
+}
+
+.sidebar .sidebar-options a {
+    display: block;
+    color: #fff;
+    margin: 6px;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar .sidebar-options a:hover {
+    background-color: black;
+    color: white;
+}
+
+.sidebar .logo {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    width: 100%;
+}
+
+header {
+    background-color: crimson;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+
+main {
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.search-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search-container input {
+    padding: 10px;
+    width: 50%;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    background-color: crimson;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-container button:hover {
+    background-color: black;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    margin-top: 20px;
+}
+
+.add-item-btn-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.add-item-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    background-color: crimson;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-item-btn:hover {
+    background-color: black;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.add-item-btn:active {
+    background-color: #333;
+    transform: translateY(0);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: crimson;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+.remove-btn,
+.update-btn,
+.go-back-btn {
+    background-color: crimson;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.remove-btn:hover,
+.update-btn:hover,
+.go-back-btn:hover {
+    background-color: black;
+    transform: translateY(-2px);
+}
+
+.remove-btn:active,
+.update-btn:active,
+.go-back-btn:active {
+    background-color: black;
+    transform: translateY(0);
+}
+
+.go-back-btn-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.go-back-btn {
+    background-color: crimson;
+    color: white;
+    margin: 25px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.go-back-btn:hover {
+    background-color: black;
+    transform: translateY(-2px);
+}
+
+.go-back-btn:active {
+    transform: translateY(0);
+}
+
+.go-back-btn:active {
+    background-color: #444;
+    transform: translateY(0);
+}
+
+#update-item-form {
+    margin-top: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+#update-item-form h3 {
+    text-align: center;
+}
+
+#update-item-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#update-item-form button {
+    width: 48%;
+    background-color: crimson;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#update-item-form button:hover {
+    background-color: black;
+    transform: translateY(-2px);
+}
+
+#update-item-form button:active {
+    background-color: #333;
+    transform: translateY(0);
+}
+
+#update-item-form button[type="button"] {
+    background-color: crimson;
+}
+
+#update-item-form button[type="button"]:hover {
+    background-color: #555;
+}
